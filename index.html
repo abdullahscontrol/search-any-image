@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Search</title>
     <link rel="stylesheet" href="index.css">
-
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
-
-    <h1>Search any Image</h1>
+    <div class="textO">
+        <h1 class="text">
+    </div>
+    </div>
+    </h1>
     <form action="#">
         <input type="text" id="search-input" placeholder="search for images">
         <button id="search-button">Search</button>
@@ -45,7 +48,14 @@
         </div>
     </div>
     <button id="show-more-button">Show more</button>
+    <script src="index.js"></script>
+    <script>
+        var typed = new Typed('.text', {
+            strings: ['Search any Image'],
+            typeSpeed: 100,
+            loop: true
+        });
+    </script>
 </body>
-<script src="index.js"></script>
 
 </html>
